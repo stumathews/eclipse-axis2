@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="DAL.DEL">
+
+    <class name="Token" table="Token">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>        
+        <property name="issued_time" column="issued_time"/>
+        <property name="mins_valid" column="mins_valid" type="int"/>
+       <property name="token" column="token"/>       
+    </class>
+
+</hibernate-mapping>
